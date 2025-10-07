@@ -1,19 +1,69 @@
 <!doctype html><meta charset="utf-8">
-<title>arthuz-th — dev portfolio</title>
+<title>arthuz-th — developer portfolio</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="arthuz-th — personal developer portfolio. Flutter, Python, n8n, AI translation & Thai TTS experiments.">
 <style>
-  body{font-family:system-ui,Segoe UI,Arial;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6}
-  h1{margin:0 0 8px}
-  small{opacity:.7}
-  ul{margin-top:8px}
+  :root{--fg:#0f172a;--muted:#475569;--card:#f8fafc;--border:#e2e8f0}
+  body{font-family:system-ui,Segoe UI,Arial;max-width:860px;margin:40px auto;padding:0 18px;line-height:1.65;color:var(--fg)}
+  h1,h2{line-height:1.2;margin:.2em 0}
+  h1{font-size:clamp(28px,5vw,40px)}
+  h2{font-size:clamp(18px,3.2vw,22px);margin-top:28px}
+  p,li,small{color:var(--muted)}
+  .grid{display:grid;gap:14px}
+  .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+  .pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:.25em .6em;margin:.2em .2em 0 0;font-size:13px;color:var(--muted)}
   a{color:inherit}
+  .muted{color:var(--muted)}
+  .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  footer{margin:28px 0;color:var(--muted)}
 </style>
+
 <h1>arthuz-th</h1>
-<small>Personal dev page (non-commercial)</small>
-<p>Projects & tools I build for content, automation, and AI.</p>
+<small class="muted">Personal dev page (non-commercial)</small>
+
+<h2>About me</h2>
+<p>
+  I’m Arthur — a content-creator-turned-developer from Thailand. I build tools for
+  <b>automation</b>, <b>AI translation</b>, and <b>Thai TTS</b> to support my YouTube workflows.
+  I like keeping things simple, fast, and reproducible.
+</p>
+
+<h2>Tech / Stack</h2>
+<div class="row">
+  <span class="pill">Flutter</span>
+  <span class="pill">Dart</span>
+  <span class="pill">Python</span>
+  <span class="pill">n8n (workflows)</span>
+</div>
+
+<h2>Projects</h2>
+<div class="cards">
+  <div class="card">
+    <b>MoomStory Reader</b><br>
+    <small class="muted">Flutter app for novel reading with AI translation pipeline (n8n + Sheets/Docs).</small><br>
+    <small>Status: private repo, live demo on request.</small>
+  </div>
+  <div class="card">
+    <b>Thai TTS Pipeline</b><br>
+    <small class="muted">Dataset builder, preprocessing (denoise, loudness, breath removal), and StyleTTS2 training scripts.</small><br>
+    <small>Status: R&amp;D — internal tools.</small>
+  </div>
+  <div class="card">
+    <b>Origins Automation</b><br>
+    <small class="muted">n8n workflows for AI translation, chapter tracking, and asset management for my channels.</small><br>
+    <small>Status: private; write-up coming soon.</small>
+  </div>
+</div>
+
+<h2>Social / Contact</h2>
 <ul>
-  <li>Flutter / Python / n8n</li>
-  <li>AI translation & TTS experiments</li>
-  <li>YouTube tooling & workflows</li>
+  <li>GitHub: <a href="https://github.com/arthuz-th">github.com/arthuz-th</a></li>
+  
+  <li>X / Twitter: <a href="https://x.com/arthuz__">@arthuz__</a></li> 
+  <li>Email: <a href="mailto:arthuz@me.com">arthuz@me.com</a></li>
 </ul>
-<p>Contact: <a href="mailto:arthuz@me.com">arthuz@me.com</a></p>
+
+<footer>
+  <small>© <script>document.write(new Date().getFullYear())</script> arthuz-th • Non-commercial personal site</small>
+</footer>
